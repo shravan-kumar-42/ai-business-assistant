@@ -371,23 +371,28 @@ Additional academic documentation is available in the repository:
 | `VIVA_QUESTIONS.md` | Prepared project viva questions and answers |
 
 ---
-
-## 👨‍💻 Developer
+## 👨‍💻 Project Team
 
 <div align="center">
 
-### Shravan Kumar G
+### 🤝 Team Members
 
-**B.E. – Artificial Intelligence & Machine Learning**
+**1. Harshal Gowda L**  
+**2. Sanjan Kumar S K**  
+**3. Shravan Kumar G**  
+**4. Suman K**
 
+**B.E. – Artificial Intelligence & Machine Learning**  
 KNS Institute of Technology
+
+<br/>
 
 <a href="https://github.com/shravan-kumar-42">
 <img src="https://img.shields.io/badge/GitHub-Shravan_Kumar-181717?style=for-the-badge&logo=github" />
 </a>
 
 <a href="https://www.linkedin.com/in/shravan-kumar-g-111720306/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" />
+<img src="https://img.shields.io/badge/LinkedIn-Shravan_Kumar-0A66C2?style=for-the-badge&logo=linkedin" />
 </a>
 
 </div>
