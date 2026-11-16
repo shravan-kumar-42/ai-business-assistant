@@ -1,169 +1,298 @@
-# AI-Powered Business Entrepreneur Assistant
+\<div align="center">
 
-**Using Generative AI, RAG, NLP, and Machine Learning**
+\<img src="[https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=220&section=header&text=AI%20Business%20Assistant&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Your%20Intelligent%20Business%20Advisor&descAlignY=58&descSize=18](https://capsule-render.vercel.app/api?type=waving\&color=0:0F2027,50:203A43,100:2C5364\&height=220\&section=header\&text=AI%20Business%20Assistant\&fontSize=38\&fontColor=ffffff\&animation=fadeIn\&fontAlignY=38\&desc=Your%20Intelligent%20Business%20Advisor\&descAlignY=58\&descSize=18)" width="100%" />
 
-A final-year B.E./B.Tech AIML major project: a full-stack web application that
-acts as a virtual business advisor for entrepreneurs and startup founders.
+\<a href="[https://readme-typing-svg.demolab.com](https://readme-typing-svg.demolab.com)">
+&#x20; \<img src="[https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&pause=1000&color=36BCF7&center=true&vCenter=true&width=750&lines=Turning+Business+Ideas+Into+Insights;Generative+AI+%7C+RAG+%7C+NLP+%7C+Machine+Learning;An+AI-Powered+Business+Decision+Support+System](https://readme-typing-svg.demolab.com?font=Fira+Code\&weight=600\&size=19\&pause=1000\&color=36BCF7\&center=true\&vCenter=true\&width=750\&lines=Turning+Business+Ideas+Into+Insights;Generative+AI+%7C+RAG+%7C+NLP+%7C+Machine+Learning;An+AI-Powered+Business+Decision+Support+System)" alt="Typing SVG" />
+\</a>
 
----
+\<br/>
 
-## Abstract
+### 🚀 From Business Ideas to Data-Driven Decisions
 
-This project combines a Retrieval-Augmented Generation (RAG) pipeline over a
-curated business knowledge base with a Large Language Model (LLM) to answer
-natural-language business questions; an NLP layer to classify query intent; a
-Machine Learning module (Random Forest) to predict business risk; K-Means
-customer segmentation; and supporting tools for business-plan generation,
-market analysis, and PDF/Excel report export — wrapped in a Flask web app
-with authentication and a SQLite database. A built-in **Demo Mode** ensures
-the entire application runs and is fully demonstrable even without a live
-LLM API key.
+**An AI-powered virtual business advisor built for entrepreneurs, startup founders, and aspiring business owners.**
 
----
+\<br/>
 
-## Features
+\<a href="[https://ai-business-assistant-lilac.vercel.app/](https://ai-business-assistant-lilac.vercel.app/)">
+&#x20; \<img src="[https://img.shields.io/badge/🚀\_LIVE_DEMO-Visit_Website-00C853?style=for-the-badge&logo=vercel&logoColor=white](https://img.shields.io/badge/🚀_LIVE_DEMO-Visit_Website-00C853?style=for-the-badge\&logo=vercel\&logoColor=white)" />
+\</a>
+\<a href="[https://github.com/shravan-kumar-42/ai-business-assistant](https://github.com/shravan-kumar-42/ai-business-assistant)">
+&#x20; \<img src="[https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge&logo=github](https://img.shields.io/badge/GitHub-Source_Code-181717?style=for-the-badge\&logo=github)" />
+\</a>
 
-### Decision Support modules (what differentiates this from a generic chatbot)
-- **Business Analyzer**: structured Business Profile input → real Financial
-  Feasibility Engine (revenue, cost, profit margin, ROI, break-even) → ML
-  Risk Prediction → combined **Business Health Score** (0-100, five weighted
-  sub-scores, formula fully transparent)
-- **Risk Factor Explanation**: ranks which inputs drove the ML prediction
-  using the trained model's real `feature_importances_`, tagged with
-  direction (increases/reduces risk) for the user's specific values
-- **What-If Simulator**: sliders (price, daily customers, rent, marketing)
-  recalculate profit/ROI/break-even live in the browser, using the same
-  formulas as the server-side engine
-- **Business Idea Generator**: given a budget + interests, returns
-  comparable business ideas, each scored with the real trained Random
-  Forest model (not static text)
-- **Competitor Analysis**: structured competitor comparison table with a
-  differentiation-opportunity prompt
-- **My Businesses**: every analysis is saved per-user and revisitable
+\<br/>\<br/>
 
-### Core AI/ML
-- AI chatbot with structured, section-based responses, connected to the
-  user's saved Business Profile when one exists (references real numbers,
-  not just generic advice) — and shows the actual RAG source documents
-  retrieved for each answer as visible citations
-- Real RAG retrieval (TF-IDF + cosine similarity) over a `.txt` knowledge base
-- Rule-based NLP intent classifier (8 business categories)
-- Random Forest **Business Risk Prediction** (Low / Medium / High)
-- K-Means **Customer Segmentation** (Budget / Regular / Premium / High-Value)
+\<img src="[https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python&logoColor=white](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square\&logo=python\&logoColor=white)" />
+\<img src="[https://img.shields.io/badge/Flask-Backend-000000?style=flat-square&logo=flask](https://img.shields.io/badge/Flask-Backend-000000?style=flat-square\&logo=flask)" />
+\<img src="[https://img.shields.io/badge/Generative_AI-LLM-8A2BE2?style=flat-square](https://img.shields.io/badge/Generative_AI-LLM-8A2BE2?style=flat-square)" />
+\<img src="[https://img.shields.io/badge/Machine_Learning-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white](https://img.shields.io/badge/Machine_Learning-scikit--learn-F7931E?style=flat-square\&logo=scikitlearn\&logoColor=white)" />
+\<img src="[https://img.shields.io/badge/Database-Neon_PostgreSQL-0080FF?style=flat-square&logo=postgresql&logoColor=white](https://img.shields.io/badge/Database-Neon_PostgreSQL-0080FF?style=flat-square\&logo=postgresql\&logoColor=white)" />
 
-### Supporting features
-- User registration / login / logout with hashed passwords and sessions
-- **Business Plan Generator** (10-section plan, savable)
-- **Market Analysis** tool (target market, competition, opportunities, threats)
-- Analytics dashboard with Chart.js visualizations
-- Query history (view / delete past conversations)
-- PDF and Excel report export (ReportLab, OpenPyXL)
-- **Demo Mode**: app works fully with zero external API dependency
+\</div>
 
 ---
 
-## Technology Stack
+## 🧠 About the Project
 
-| Layer | Technology |
-|---|---|
-| Frontend | HTML5, CSS3, Bootstrap 5, JavaScript, Chart.js |
-| Backend | Python 3.10+, Flask |
-| Database | SQLite + SQLAlchemy (Flask-SQLAlchemy) |
-| AI/NLP | Custom keyword-based intent classifier |
-| RAG | scikit-learn TF-IDF + cosine similarity |
-| LLM | Pluggable OpenAI-compatible API client, with Demo Mode fallback |
-| ML | scikit-learn (Random Forest, K-Means) |
-| Reports | ReportLab (PDF), OpenPyXL (Excel) |
+**AI-Powered Business Entrepreneur Assistant** is a final-year B.E./B.Tech Artificial Intelligence and Machine Learning major project designed to help entrepreneurs make smarter business decisions.
+
+Instead of functioning as just another chatbot, this application combines **Generative AI, Retrieval-Augmented Generation (RAG), Natural Language Processing, and Machine Learning** to provide structured business insights.
+
+Users can explore business ideas, analyze financial feasibility, estimate business risks, understand customer segments, generate business plans, and interact with an AI-powered business advisor.
+
+The application also includes a Demo Mode, allowing its core features to be demonstrated without requiring an external LLM API key.
 
 ---
 
-## Architecture
+## 🌐 Live Application
 
+\<div align="center">
+
+### Experience the AI Business Assistant
+
+\<a href="[https://ai-business-assistant-lilac.vercel.app/](https://ai-business-assistant-lilac.vercel.app/)">
+&#x20; \<img src="[https://img.shields.io/badge/OPEN_LIVE_APPLICATION-Click_Here-00C853?style=for-the-badge&logo=vercel&logoColor=white](https://img.shields.io/badge/OPEN_LIVE_APPLICATION-Click_Here-00C853?style=for-the-badge\&logo=vercel\&logoColor=white)" />
+\</a>
+
+**Deployed using Vercel | Database hosted on Neon PostgreSQL**
+
+\</div>
+
+---
+
+## ✨ Key Features
+
+### 📊 1. Intelligent Business Decision Support
+
+| Feature                 | Description                                                                  |
+| ----------------------- | ---------------------------------------------------------------------------- |
+| Business Analyzer       | Evaluates financial feasibility, profitability, ROI, and break-even          |
+| Business Health Score   | Generates a weighted business score from 0–100                               |
+| Risk Prediction         | Predicts business risk as Low, Medium, or High                               |
+| Risk Factor Explanation | Identifies influential business inputs using model feature importance        |
+| What-If Simulator       | Dynamically recalculates financial outcomes when business assumptions change |
+| Business Idea Generator | Generates and scores business ideas using a trained ML model                 |
+| Competitor Analysis     | Compares competitors and identifies differentiation opportunities            |
+| My Businesses           | Saves and manages individual business analyses                               |
+
+### 🤖 2. AI & NLP Capabilities
+
+- AI-powered chatbot with structured business responses.
+- Retrieval-Augmented Generation (RAG) using a curated business knowledge base.
+- TF-IDF vectorization and cosine similarity for document retrieval.
+- Source document references for retrieved knowledge.
+- NLP-based intent classification across eight business categories.
+- Context-aware responses using saved business profiles.
+- Pluggable OpenAI-compatible LLM API integration.
+- Demo Mode with template-based response generation.
+
+### 📈 3. Machine Learning
+
+| Model / Technique  | Application                  |
+| ------------------ | ---------------------------- |
+| Random Forest      | Business Risk Prediction     |
+| K-Means Clustering | Customer Segmentation        |
+| TF-IDF             | Knowledge Base Vectorization |
+| Cosine Similarity  | Relevant Document Retrieval  |
+| Feature Importance | Risk Factor Explanation      |
+
+### 🛠️ 4. Additional Features
+
+- User registration, login, and logout.
+- Secure password hashing and session management.
+- Business Plan Generator with 10 sections.
+- Market Analysis tool.
+- Interactive analytics dashboard.
+- Chart.js visualizations.
+- Conversation history management.
+- PDF report generation.
+- Excel report export.
+- Demo Mode for demonstrations without an external LLM API.
+
+---
+
+## 🏗️ System Architecture
+
+\<div align="center">
+
+```mermaid
+flowchart TD
+    A["👤 User"] --> B["🌐 Web Interface"]
+    B --> C["⚙️ Flask Backend"]
+
+    C --> D["🔐 Authentication"]
+    C --> E["🤖 AI Chatbot"]
+    C --> F["📊 Business Analyzer"]
+    C --> G["📈 ML Prediction"]
+    C --> H["📄 Report Generation"]
+
+    E --> I["🧠 NLP Intent Classification"]
+    I --> J["📚 RAG Retrieval"]
+    J --> K["💬 LLM / Demo Mode"]
+
+    F --> L["💰 Financial Feasibility Engine"]
+    G --> M["🌳 Random Forest"]
+    G --> N["👥 K-Means Clustering"]
+
+    D --> O["🗄️ Database"]
+    F --> O
+    E --> O
+    H --> O
 ```
-User → Browser (Bootstrap UI)
-     → Flask routes (auth / dashboard / chatbot / business / prediction / reports)
-     → AI layer (nlp.py → rag.py → llm.py) for chat
-     → ML layer (train_model.py / predict.py / segmentation.py) for risk & segments
-     → SQLAlchemy models → SQLite (instance/app.db)
-```
 
-See `DIAGRAMS.md` for full Mermaid diagrams (architecture, data flow, use-case,
-ER diagram, ML workflow, RAG workflow).
+\</div>
 
 ---
 
-## Folder Structure
+## 💻 Technology Stack
 
-```
-ai_business_assistant/
-├── app.py                  Flask entry point
-├── config.py                Central config (reads .env)
+| Category                | Technologies                                 |
+| ----------------------- | -------------------------------------------- |
+| Programming Language    | Python                                       |
+| Frontend                | HTML5, CSS3, Bootstrap 5, JavaScript         |
+| Backend                 | Flask                                        |
+| Database                | SQLite (local), Neon PostgreSQL (production) |
+| ORM                     | SQLAlchemy, Flask-SQLAlchemy                 |
+| Artificial Intelligence | Generative AI, LLM Integration               |
+| NLP                     | Custom Intent Classification                 |
+| RAG                     | TF-IDF, Cosine Similarity                    |
+| Machine Learning        | Scikit-learn, Random Forest, K-Means         |
+| Data Processing         | NumPy, Pandas                                |
+| Visualization           | Chart.js                                     |
+| PDF Generation          | ReportLab                                    |
+| Excel Generation        | OpenPyXL                                     |
+| Deployment              | Vercel                                       |
+| Version Control         | Git and GitHub                               |
+
+---
+
+## 📂 Project Structure
+
+```text
+ai-business-assistant/
+│
+├── app.py
+├── config.py
 ├── requirements.txt
 ├── .env.example
-├── database/                 SQLAlchemy models + init
-├── routes/                    Flask blueprints (auth, dashboard, chatbot, business, prediction, reports)
-├── ai/                         NLP, RAG, LLM client, prompt templates
-├── ml/                          Training, prediction, segmentation, preprocessing
-├── data/                         business_dataset.csv, customer_dataset.csv (synthetic)
-├── knowledge_base/                RAG source documents (.txt)
-├── templates/                      Jinja2 / Bootstrap HTML
-├── static/                          CSS / JS
-├── reports/                          Generated PDF/Excel output
-├── tests/                             pytest test suite
-└── instance/                           app.db (created on first run)
+│
+├── database/
+│   ├── models
+│   └── initialization
+│
+├── routes/
+│   ├── authentication
+│   ├── dashboard
+│   ├── chatbot
+│   ├── business
+│   ├── prediction
+│   └── reports
+│
+├── ai/
+│   ├── nlp.py
+│   ├── rag.py
+│   ├── llm.py
+│   └── prompt templates
+│
+├── ml/
+│   ├── train_model.py
+│   ├── predict.py
+│   ├── segmentation.py
+│   └── preprocessing
+│
+├── data/
+│   ├── business_dataset.csv
+│   └── customer_dataset.csv
+│
+├── knowledge_base/
+│
+├── templates/
+│
+├── static/
+│   ├── css/
+│   └── js/
+│
+├── reports/
+│
+├── tests/
+│
+├── DIAGRAMS.md
+├── ACADEMIC_DOCUMENTATION.md
+└── VIVA_QUESTIONS.md
 ```
 
 ---
 
-## Installation (Windows + VS Code)
+## ⚙️ Installation and Setup
 
-### 1. Create and activate a virtual environment
+### Prerequisites
+
+- Python 3.10+
+- Git
+- VS Code (recommended)
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/shravan-kumar-42/ai-business-assistant.git
+
+cd ai-business-assistant
+```
+
+### 2. Create a virtual environment
 
 ```bash
 python -m venv venv
+```
+
+Activate it on Windows:
+
+```bash
 venv\Scripts\activate
 ```
 
-### 2. Install dependencies
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Configure environment variables
+### 4. Configure environment variables
+
+Create your local environment file:
 
 ```bash
 copy .env.example .env
 ```
 
-Open `.env` and set `SECRET_KEY` to any random string. Leave `LLM_API_KEY`
-blank to run in **Demo Mode** (recommended for viva/demo), or fill it in with
-a real OpenAI-compatible API key to enable live LLM responses.
+Configure the required variables in `.env`.
 
-### 4. Train the Machine Learning model
+Keep your API keys and database credentials private. Never commit your actual `.env` file.
+
+Leave `LLM_API_KEY` empty to use Demo Mode, or configure a valid OpenAI-compatible API key for live LLM responses.
+
+### 5. Train the Machine Learning model
 
 ```bash
 python ml/train_model.py
 ```
 
-This trains the Random Forest risk model on `data/business_dataset.csv` and
-saves `ml/model.pkl` + `ml/encoders.pkl`. Prints accuracy, precision, recall,
-F1-score, and a confusion matrix.
+This trains the Random Forest model using the provided synthetic business dataset.
 
-### 5. Run the application
+### 6. Run the application
 
 ```bash
 python app.py
 ```
 
-The database (`instance/app.db`) is created automatically on first run. Open
-the printed URL, typically:
+Open your browser:
 
-```
+```text
 http://127.0.0.1:5000
 ```
 
-### 6. (Optional) Run the test suite
+### 7. Run tests (optional)
 
 ```bash
 pip install pytest
@@ -172,103 +301,105 @@ pytest tests/
 
 ---
 
-## Demo Credentials
+## 🧪 Demo Mode
 
-No demo account is pre-seeded — register a new account from the **Register**
-page on first run (takes 10 seconds).
+The application supports Demo Mode when no LLM API key is configured.
 
----
+In this mode:
 
-## Demo Mode
+- The chatbot uses structured template-based responses.
+- NLP intent classification continues to work.
+- RAG document retrieval continues to work.
+- Business Plan Generator uses built-in templates.
+- Market Analysis uses built-in templates.
+- Random Forest risk prediction remains available.
+- K-Means customer segmentation remains available.
 
-If `LLM_API_KEY` is empty in `.env` (default), the app automatically runs in
-**Demo Mode**:
-- The chatbot returns structured, template-based responses (still driven by
-  real NLP intent classification and real RAG retrieval from the knowledge
-  base — only the final LLM generation step is templated).
-- Business Plan Generator and Market Analysis use built-in templates.
-- ML Risk Prediction and Customer Segmentation are unaffected — they are
-  genuine scikit-learn models regardless of Demo Mode.
-- The Dashboard and Analytics pages work normally.
-
-This means the entire project can be demonstrated in a viva with **zero
-internet dependency** for the AI portions.
+**Note:** Demo Mode replaces the final LLM response-generation step. It does not disable the underlying NLP, retrieval, or ML functionality.
 
 ---
 
-## API / Route Reference
+## 📡 API / Route Reference
 
-| Method | Route | Description |
-|---|---|---|
-| GET/POST | `/register` | User registration |
-| GET/POST | `/login` | User login |
-| GET | `/logout` | Logout |
-| GET | `/dashboard` | Main dashboard |
-| GET | `/chat` | Chatbot UI |
-| POST | `/chat` | Send a chat message |
-| POST | `/chat/new` | Start new conversation |
-| GET | `/history` | List conversations |
-| POST | `/history/<id>` | Delete a conversation |
-| GET/POST | `/business-plan` | Generate business plan |
-| POST | `/business-plan/save` | Save generated plan |
-| GET/POST | `/market-analysis` | Market analysis tool |
-| GET/POST | `/prediction` | ML risk prediction |
-| GET/POST | `/business-analyzer` | Business Profile → Feasibility + Risk + Health Score |
-| GET | `/business-analyzer/<id>` | View saved analysis + What-If simulator |
-| GET | `/my-businesses` | Saved business profile history |
-| POST | `/my-businesses/<id>/delete` | Delete a saved profile |
-| GET/POST | `/idea-generator` | ML-scored Business Idea Generator |
-| GET/POST | `/competitor-analysis` | Competitor comparison tool |
-| GET | `/analytics` | Analytics dashboard |
-| GET | `/reports` | Reports home |
-| GET | `/reports/pdf` | Export PDF report |
-| GET | `/reports/excel` | Export Excel report |
+| Method   | Endpoint               | Description                   |
+| -------- | ---------------------- | ----------------------------- |
+| GET/POST | `/register`            | User registration             |
+| GET/POST | `/login`               | User login                    |
+| GET      | `/logout`              | User logout                   |
+| GET      | `/dashboard`           | Main dashboard                |
+| GET/POST | `/chat`                | AI chatbot                    |
+| POST     | `/chat/new`            | New conversation              |
+| GET      | `/history`             | Conversation history          |
+| GET/POST | `/business-plan`       | Business plan generation      |
+| POST     | `/business-plan/save`  | Save business plan            |
+| GET/POST | `/market-analysis`     | Market analysis               |
+| GET/POST | `/prediction`          | ML risk prediction            |
+| GET/POST | `/business-analyzer`   | Business feasibility analysis |
+| GET      | `/my-businesses`       | Saved business profiles       |
+| GET/POST | `/idea-generator`      | Business idea generation      |
+| GET/POST | `/competitor-analysis` | Competitor analysis           |
+| GET      | `/analytics`           | Analytics dashboard           |
+| GET      | `/reports`             | Reports dashboard             |
+| GET      | `/reports/pdf`         | PDF export                    |
+| GET      | `/reports/excel`       | Excel export                  |
 
 ---
 
-## Dataset Disclaimer
+## 📊 Dataset Disclaimer
 
-`data/business_dataset.csv` and `data/customer_dataset.csv` are **synthetic,
-academically generated datasets** created for demonstration purposes. Model
-accuracy figures reflect performance on this synthetic data only and are
-**not** a claim of real-world predictive accuracy. This is stated explicitly
-in the UI (Risk Prediction page) and in generated reports.
+The business and customer datasets included in this project are synthetically generated for academic and demonstration purposes.
+
+Machine Learning evaluation metrics reflect performance on the provided synthetic datasets and should not be interpreted as evidence of real-world predictive accuracy.
 
 ---
 
-## Troubleshooting
+## 🔮 Future Enhancements
 
-| Problem | Fix |
-|---|---|
-| `ModuleNotFoundError: No module named 'flask_sqlalchemy'` | Run `pip install -r requirements.txt` inside the activated venv |
-| "Model not found" error on Prediction page | Run `python ml/train_model.py` first |
-| Chatbot always shows "[DEMO MODE]" | Expected if `LLM_API_KEY` is blank in `.env` — this is normal/by design |
-| Port 5000 already in use | Edit the last line of `app.py` to use a different port, e.g. `port=5050` |
-| `instance/app.db` seems out of date after model changes | Delete `instance/app.db` and restart `python app.py` to recreate tables |
-
----
-
-## Future Enhancements
-
-- Swap the local TF-IDF retriever for a vector database (e.g., FAISS, Chroma)
-  for larger knowledge bases
-- Add JWT-based API authentication for a separate mobile client
-- Add XGBoost as a selectable advanced risk-prediction model
-- Real market-data integration for the Market Analysis module
-- Multi-language support for the chatbot
+- Integrate vector databases such as FAISS or ChromaDB for scalable RAG retrieval.
+- Introduce real-time market data integration.
+- Add multilingual AI chatbot support.
+- Explore XGBoost for advanced business risk prediction.
+- Develop a separate mobile application with API authentication.
+- Improve business recommendations using additional real-world datasets.
 
 ---
 
-## Academic Project Documentation
+## 📚 Project Documentation
 
-See `ACADEMIC_DOCUMENTATION.md` for the full 18-chapter project report
-(Introduction through Conclusion), `DIAGRAMS.md` for Mermaid architecture/
-workflow diagrams, and `VIVA_QUESTIONS.md` for 30+ prepared viva Q&A.
+Additional academic documentation is available in the repository:
+
+| Document                    | Description                                       |
+| --------------------------- | ------------------------------------------------- |
+| `ACADEMIC_DOCUMENTATION.md` | Complete academic project report                  |
+| `DIAGRAMS.md`               | Architecture, data flow, ER, RAG, and ML diagrams |
+| `VIVA_QUESTIONS.md`         | Prepared project viva questions and answers       |
 
 ---
 
-## License / Data Notice
+## 👨‍💻 Developer
 
-All knowledge-base content and datasets in this repository were written or
-synthetically generated specifically for this academic project. No
-copyrighted third-party datasets are included.
+\<div align="center">
+
+### Shravan Kumar G
+
+**B.E. – Artificial Intelligence & Machine Learning**
+
+KNS Institute of Technology
+
+\<a href="[https://github.com/shravan-kumar-42](https://github.com/shravan-kumar-42)">   \<img src="[https://img.shields.io/badge/GitHub-Shravan_Kumar-181717?style=for-the-badge&logo=github](https://img.shields.io/badge/GitHub-Shravan_Kumar-181717?style=for-the-badge\&logo=github)" /> \</a>
+
+\<a href="[https://www.linkedin.com/in/shravan-kumar-g-111720306/](https://www.linkedin.com/in/shravan-kumar-g-111720306/)">   \<img src="[https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge\&logo=linkedin)" /> \</a>
+
+\</div>
+
+---
+
+\<div align="center">
+
+### 💡 Turning Ideas Into Intelligent Decisions
+
+**Built with Python, Artificial Intelligence, Machine Learning, and a passion for innovation.**
+
+\<img src="[https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=120&section=footer](https://capsule-render.vercel.app/api?type=waving\&color=0:2C5364,50:203A43,100:0F2027\&height=120\&section=footer)" width="100%" />
+
+\</div>
