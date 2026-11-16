@@ -1,4 +1,3 @@
-=======
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=220&section=header&text=AI%20Business%20Assistant&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Your%20Intelligent%20Business%20Advisor&descAlignY=58&descSize=18" width="100%" />
