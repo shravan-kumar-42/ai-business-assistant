@@ -148,7 +148,7 @@ flowchart TD
 | Programming Language | Python |
 | Frontend | HTML5, CSS3, Bootstrap 5, JavaScript |
 | Backend | Flask |
-| Database | MySQL 8.0 |
+| Database |	SQLite (local), Neon PostgreSQL (production), MySQL 8.0 |
 | ORM | SQLAlchemy, Flask-SQLAlchemy |
 | Artificial Intelligence | Generative AI, LLM Integration |
 | NLP | Custom Intent Classification |
